@@ -1,0 +1,12 @@
+<form>
+  <div class="form-control">
+    <label for="age"></label>
+    <input
+      name="age"
+      id="age"
+      [(ngModel)]="age"
+      type="number"
+      (ngModelChange)="updateAge()"
+    />
+  </div>
+</form>
