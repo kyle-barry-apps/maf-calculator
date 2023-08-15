@@ -8,6 +8,10 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class FormComponent {
   age: number = 40;
+  recovering: boolean = false;
+  injured: boolean = false;
+  training: boolean = false;
+  improving: boolean = false
 
   constructor(private dataService: DataService) {}
 

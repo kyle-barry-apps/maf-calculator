@@ -1,12 +1,35 @@
-<form>
-  <div class="form-control">
-    <label for="age"></label>
+<form class="form-container">
+  <div class="form-control-age">
+    <label for="age">Age:</label>
     <input
       name="age"
-      id="age"
       [(ngModel)]="age"
       type="number"
       (ngModelChange)="updateAge()"
     />
+  </div>
+  <div class="form-control">
+    <label for="recovering"
+      >Recovering from major illness or chronic overtraining</label
+    >
+    <input type="checkbox" name="recovering" />
+  </div>
+  <div class="form-control">
+    <label for="injured"
+      >Injured, regressed, not improving or inconsistent</label
+    >
+    <input type="checkbox" name="injured" />
+  </div>
+  <div class="form-control">
+    <label for="training"
+      >Training consistently for up to two years without problems</label
+    >
+    <input type="checkbox" name="training" />
+  </div>
+  <div class="form-control">
+    <label for="improving"
+      >Improving without injury for more than two years</label
+    >
+    <input type="checkbox" name="improving" />
   </div>
 </form>
