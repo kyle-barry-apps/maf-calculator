@@ -18,4 +18,15 @@ export class FormComponent {
   updateAge() {
     this.dataService.age = this.age;
   }
+  updateRecovering() {
+    this.dataService.recovering = this.recovering
+  }
+  updateInjured() {
+    this.dataService.injured = this.injured  }
+
+  updateTraining() {
+    this.dataService.training = this.training  }
+
+  updateImproving() {
+    this.dataService.improving = this.improving  }
 }

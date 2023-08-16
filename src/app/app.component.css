@@ -3,9 +3,16 @@
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  border: 2px solid red;
+  background-color: var(--light-pink);
   border-radius: 1rem;
+  border: 3px solid var(--deep-red);
   margin: 10rem auto;
-  width: 750px;
-  padding: 2rem;
+  padding: 3rem;
+  width: 35rem;
+  color: var(--off-white);
+}
+
+h1 {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
 }

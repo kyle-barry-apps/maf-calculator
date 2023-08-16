@@ -12,24 +12,44 @@
     <label for="recovering"
       >Recovering from major illness or chronic overtraining</label
     >
-    <input type="checkbox" name="recovering" />
+    <input
+      type="checkbox"
+      name="recovering"
+      [(ngModel)]="recovering"
+      (ngModelChange)="updateRecovering()"
+    />
   </div>
   <div class="form-control">
     <label for="injured"
       >Injured, regressed, not improving or inconsistent</label
     >
-    <input type="checkbox" name="injured" />
+    <input
+      type="checkbox"
+      name="injured"
+      [(ngModel)]="injured"
+      (ngModelChange)="updateInjured()"
+    />
   </div>
   <div class="form-control">
     <label for="training"
       >Training consistently for up to two years without problems</label
     >
-    <input type="checkbox" name="training" />
+    <input
+      type="checkbox"
+      name="training"
+      [(ngModel)]="training"
+      (ngModelChange)="updateTraining()"
+    />
   </div>
   <div class="form-control">
     <label for="improving"
       >Improving without injury for more than two years</label
     >
-    <input type="checkbox" name="improving" />
+    <input
+      type="checkbox"
+      name="improving"
+      [(ngModel)]="improving"
+      (ngModelChange)="updateImproving()"
+    />
   </div>
 </form>

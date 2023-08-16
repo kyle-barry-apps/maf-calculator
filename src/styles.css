@@ -3,3 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --deep-red: #B30015;
+  --dark-pink: #FF355E;
+  --light-pink: #FF6B8A;
+  --pale-pink: #FFB3C1;
+  --off-white: #F5F5F5;
+}

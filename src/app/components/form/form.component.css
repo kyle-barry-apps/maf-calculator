@@ -21,7 +21,19 @@
 .form-control-age input {
   width: 3rem;
   border: none;
-  border-bottom: 1px solid red;
+  border-radius: 5px;
   display: flex;
-  padding: .5rem;
+  padding: 1rem .5rem;
+  height: 2rem
 }
+
+.form-control-age input:focus {
+  outline: 2px solid var(--pale-pink);
+}
+
+.form-control input { 
+  background-color: var(--off-white);
+  border: none;
+  outline: none;
+}
+

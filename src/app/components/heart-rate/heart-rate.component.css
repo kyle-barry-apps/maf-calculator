@@ -1,0 +1,9 @@
+.calculated-hr {
+  display: flex;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  background-color: var(--dark-pink);
+  color: var(--off-white);
+  border: 3px solid var(--deep-red);
+}

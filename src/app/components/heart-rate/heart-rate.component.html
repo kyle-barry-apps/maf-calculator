@@ -1,3 +1,17 @@
 <div class="heart-rate-container">
-  <div class="calculated-hr">{{ 180 - age }} bpm</div>
+  <div class="calculated-hr">
+    {{
+      recovering && injured && !training
+        ? 180 - age - 10 - 5
+        : recovering && !injured && !training
+        ? 180 - age - 10
+        : !recovering && injured && !training
+        ? 180 - age - 5
+        : training
+        ? 180 - age
+        : improving && !recovering && !injured && !training
+        ? 180 - age + 5
+        : 180 - age
+    }}
+  </div>
 </div>
